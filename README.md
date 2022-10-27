@@ -30,8 +30,9 @@ kubectl create namespace argocd
 
 Apply ArgoCD manifests to namespace
 ```shell
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/${RELEASE}/manifests/install.yaml
 ``` 
+*The full list of ArgoCD RELEASEs can be found [here](https://github.com/argoproj/argo-cd/releases)*
 
 Wait for all pods to be in a running state
 ```text
